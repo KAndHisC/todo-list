@@ -1,0 +1,114 @@
+body {
+    padding: 50px 0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, #ffafbd, #ffc3a0);
+    /* background-repeat: no-repeat */
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px yellow;
+}
+
+
+ul {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px yellow;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 10px orange;
+}
+
+.item {
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mark-done:before {
+    background: transparent;
+}
+
+.mark-done:checked+.item {
+    text-decoration: line-through;
+    color: white;
+    /* background-color: orange; */
+}
+
+.underline {
+    border-bottom: 3px solid orange;
+    margin-left: 5%;
+    width: 80%;
+}
+
+.input {
+    border: none;
+    /* remove the default border */
+    outline: none;
+    /* remove the default outline */
+    box-shadow: none;
+    /* remove the default box shadow */
+    background-color: transparent;
+    /* make the background transparent */
+    font-size: 20px;
+    /* increase the font size */
+    color: gray;
+    /* set the text color to black */
+    text-align: center;
+    /* center the text */
+    font-weight: bold;
+    width: 100%;
+}
+
+button {
+    border: none;
+    /* remove the default border */
+    outline: none;
+    /* remove the default outline */
+    box-shadow: none;
+    /* remove the default box shadow */
+    /* background-color: transparent; */
+    background: linear-gradient(to right, #ffa07a, #ff7f50);
+    /* make the background transparent */
+    font-size: 20px;
+    /* increase the font size */
+    color: white;
+    /* set the text color to black */
+    text-align: center;
+    /* center the text */
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    /* border-radius: 10px; */
+    /* background-color: #f2f2f2; */
+    /* box-shadow: 0 0 10px yellow; */
+}
