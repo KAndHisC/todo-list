@@ -1,8 +1,9 @@
-FROM python:3.10
+FROM continuumio/miniconda3
 
 # RUN python -m pip install --upgrade pip
-RUN pip install flask
+RUN conda install -c conda-forge sqlite flask -y
 
+RUN echo "140.82.113.4 github.com" >> /etc/hosts
 RUN git clone https://github.com/KAndHisC/todo-list.git
 WORKDIR /todo-list
 
