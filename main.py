@@ -44,11 +44,11 @@ def delete_completed():
 
 @app.route('/')
 def index():
-    return send_file('./static/index.html')
+    return send_file('static/index.html')
 
 @app.route('/<path:path>')
 def static_proxy(path):
-    return send_file('./static/'+path)
+    return send_file('static/'+path)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=80)
