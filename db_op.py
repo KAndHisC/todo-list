@@ -5,7 +5,6 @@ def add_item(item):
     con = sqlite3.connect('database/todo.db')
     result = None
     try:
-        # cursor = con.execute("INSERT INTO todo (task,status) VALUES ('a',0) RETURNING id")
         cursor = con.execute("INSERT INTO todo (task,status) VALUES ('{}',0) RETURNING id".format(item))
         row = cursor.fetchone()
         con.commit()
